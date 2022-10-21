@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 //EXERCICIO 1
 /*Escreva um programa  lê matricula e as notas de no máximo 100
@@ -194,3 +195,149 @@ for(int i = 0; i < 4; i++)
 return 0;
 }
 */
+
+//exercicio 6
+
+
+
+
+//exercicio 7 
+/*
+int main (){
+ int matris[3][3],col1=0,col2=0,col3=0,i,j;
+
+    for ( i = 0; i < 3; i++)
+    {
+        for ( j = 0; j < 3; j++)
+        {
+            printf ("ME forneça o valor da matrix na posicao %d %d",i,j);
+            scanf("%d",&matris[i][j]);
+        }
+        
+    }
+
+    for ( i = 0; i < 3; i++)
+    {
+        for ( j = 0; j < 3; j++)
+        {
+            printf("%d\t",matris[i][j]);
+        
+        }
+        printf("\n");
+    }
+
+
+
+
+    for ( i = 0; i < 3; i++)
+    {
+        
+        col1 = col1 + matris[i][i];
+        printf("%d",col1);
+       
+    }
+
+    for ( i = 0; i < 2; i++)
+    {
+         col2 = col2+ matris[i][i+1]; 
+    }
+
+    for ( i = 0; i < 2; i++)
+    { 
+       col3 = col3 + matris[i+1][i];
+    }
+
+    printf("O Valor da diagonal princilao e=%d\nO valor da diagonal superior e=%d\nE o valor da diagonal inferior e=%d ",col1,col2,col3);
+    
+}*/
+
+// Exercicio 8
+/*
+int main (){
+    int matrix[10][10],i,j ;
+
+    for ( i = 0; i < 10; i++)
+    {
+        for ( j = 0; j < 10; j++)
+        {
+            if (i<j)
+            {
+
+             matrix[i][j] = 2*i + 7*j -2;  
+
+            }
+            else if (i==j)
+            {
+
+            matrix[i][j]= pow(3*i,2) - 1;
+
+            }
+            else if (i>j)
+            {
+
+               matrix[i][j]= pow(4*i,3) + pow(5*j,2) +1;
+
+            } 
+        }
+            
+    }
+     for ( i = 0; i < 10; i++)
+    {
+        for ( j = 0; j < 10; j++)
+        {
+            printf("%d\t",matrix[i][j]);
+        
+        }
+        printf("\n");
+    }
+      
+
+}*/
+
+//Exercicio 9
+
+/*Faça um programa em C que leia uma matriz 10 x 3 com as notas de 10
+alunos em 3 disciplinas. Em seguida, calcule e escreva o número de alunos
+cuja pior nota foi na disciplina 1, o número de alunos cuja pior nota foi na
+disciplina 2, e o número de alunos cuja a pior nota foi na disciplina 3. Em caso
+de empate das piores notas de um aluno, o critério de desempate é arbitrário,
+mas o aluno deve ser contabilizado apenas uma vez*/
+/*
+int main(){
+    int matrix[10][3],pior = 100,piorNota[3],aluno[3],materia[3],i,j;
+    for ( i = 0; i < 10; i++)
+    {
+        for ( j = 0; j < 3; j++)
+        {
+            printf("Me forneça a nota %d do aluno %d (%d,%d):",j,i,i,j);
+            scanf("%d",&matrix[i][j]);
+        }
+        
+    }
+    
+
+
+    for ( j = 0; j < 3; j++)
+    {
+        pior = 100;
+        for ( i = 0; i < 10; i++)
+        {
+            if (matrix[i][j]< pior)
+            {
+                pior = matrix[i][j];
+                piorNota[j]=matrix[i][j];
+                aluno[j]=i;
+                materia[j]=j;
+            }
+        }
+        
+    }
+    
+    for ( i = 0; i < 3; i++)
+    {
+        printf("Pior aluno na materia  %d foi %d com %d\n",i,aluno[i],piorNota[i]);
+    }
+    
+
+
+}*/
