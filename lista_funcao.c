@@ -188,5 +188,6 @@ int main (){
     scanf("%f",&peso);
 
     CalculaIMC(peso,altura);
+    
 }
 
