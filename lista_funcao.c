@@ -168,14 +168,14 @@ int main (){
     volume(raio);
 }
 */
-
+//Exercicio 6
 int CalculaIMC (float peso,float altura){
 
-float imc;
+    float imc;
 
-imc = peso/pow(altura,2);
+    imc = peso/pow(altura,2);
 
-printf("Volume e %.2f",imc);
+    printf("Volume e %.2f",imc);
 }
 
 int main (){
