@@ -54,13 +54,13 @@ foram lidas*/
 //EXERCICIO 4 
 
 int main (){
-    char letras[5];
+    char letras[30];
     printf("Me forneça as letras ");
     fflush(stdin);
-    fgets(letras,5,stdin);
+    fgets(letras,30,stdin);
 
 
-    for ( int i = 4; i >=0; i--)
+    for ( int i = 29; i >=0; i--)
     {
        printf("%c\n",letras[i]);       
     }
