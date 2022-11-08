@@ -7,6 +7,7 @@ alunos. O programa deve ler e armazenar uma nova matricula e uma nova nota
 enquanto o usuário desejar. Após o armazenamento permita ao usuário
 consultar a nota de um aluno digitando sua matricula, o programa deve permitir
 no máximo 10 consultas para um mesmo ciclo de execução do programa*/
+/*
 int main(){
     int matricula[4],i,notas[4],continua,count=0,pesquisa;
     
@@ -44,7 +45,7 @@ int main(){
             {
                 if (pesquisa == matricula[i])
                 {
-                    printf("O aluno da matricula %d possue %d de nota\n\n",matricula[i],notas[i]);
+                    printf("Matricula %d\nNota%d \n\n",matricula[i],notas[i]);
                     break;
                 }
             }
@@ -56,7 +57,7 @@ int main(){
     }
 
 }
-
+*/
 //Exercico 2
 /*
 int main(){
@@ -157,83 +158,82 @@ int main(){
 //Exercicio5 5 5 5 5 5 5 5 
 /* Desenvolva um programa em C que leia duas matrizes 4 x 4 e escreva uma
 terceira com os maiores valores de cada posição das matrizes lidas*/
-/*
+
 int main(){
+    int i ,j;
+    int A[4][4], B[4][4], C[4][4];
 
-int A[4][4], B[4][4], C[4][4];
+
+
+    for( i = 0; i < 4; i++)
+    {
+
+        for( j = 0; j < 4; j++)//adiciona valor
+        {
+
+            printf("A(%i,%i) =", i, j);
+            scanf("%d", &A[i][j]);
+
+        }
+
+    }
 
 
 
-for(int i = 0; i < 4; i++)
-{
+    for( i = 0; i < 4; i++)
+    {
 
- for(int j = 0; j < 4; j++)
- {
+        for( j = 0; j < 4; j++)
+        {
 
-  printf("A(%i,%i) =", i, j);
+            printf("B(%i,%i) =", i, j);
+            scanf("%i", &B[i][j]);
 
-  scanf("%i", &A[i][j]);
+        }
 
- }
+    }
 
+
+
+    for( i = 0; i < 4; i++)
+    {
+
+        for( j = 0; j < 4; j++)
+        {
+
+            if(A[i][j] >= B[i][j])
+            {
+
+                C[i][j] = A[i][j];
+
+            }
+
+            else if (B[i][j]> A[i][j])
+            {
+
+                C[i][j] = B[i][j];
+
+            }
+
+        }
+
+    }
+
+    for( i = 0; i < 4; i++)
+    {
+
+        for( j = 0; j < 4; j++)
+        {
+
+         printf("C(%d,%d) = %d\n", i, j, C[i][j]);
+
+        }
+
+    }
+
+    return 0;
 }
 
-
-
-for(int i = 0; i < 4; i++)
-{
-
- for(int j = 0; j < 4; j++)
- {
-
-  printf("B(%i,%i) =", i, j);
-  scanf("%i", &B[i][j]);
-
- }
-
-}
-
-
-
-for(int i = 0; i < 4; i++)
-{
-
- for(int j = 0; j < 4; j++)
- {
-
-  if(A[i][j] >= B[i][j])
-  {
-
-   C[i][j] = A[i][j];
-
-  }
-
-  else
-  {
-
-   C[i][j] = B[i][j];
-
-  }
-
- }
-
-}
-
-for(int i = 0; i < 4; i++)
-{
-
- for(int j = 0; j < 4; j++)
- {
-
-  printf("C(%i,%i) = %i\n", i, j, C[i][j]);
-
- }
-
-}
-
-return 0;
-}
-*/
 
 //exercicio 6
 
