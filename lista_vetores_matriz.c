@@ -58,6 +58,7 @@ int main(){
 
 }
 */
+
 //Exercico 2
 /*
 int main(){
@@ -155,7 +156,7 @@ int main(){
     }
 }*/
 
-//Exercicio5 5 5 5 5 5 5 5 
+//Exercicio5 5
 /* Desenvolva um programa em C que leia duas matrizes 4 x 4 e escreva uma
 terceira com os maiores valores de cada posição das matrizes lidas*/
 
@@ -201,7 +202,7 @@ int main(){
         for( j = 0; j < 4; j++)
         {
 
-            if(A[i][j] >= B[i][j])
+            if(A[i][j] > B[i][j])
             {
 
                 C[i][j] = A[i][j];
@@ -233,7 +234,6 @@ int main(){
 
     return 0;
 }
-
 
 //exercicio 6
 
