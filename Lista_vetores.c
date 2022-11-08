@@ -73,7 +73,46 @@ int main(){
 }
 }*/
 
+//Exercicio 6
+/*Fazer um algoritmo/programa que leia a matricula e o salário dos funcionários de uma empresa
+(máximo de 100 funcionários). Após a leitura de todos os dados, informe em uma tela limpa os
+dados lidos e o maior e menor salário dos funcionários. O maior e menor salário deverão ser
+obtidos, cada um, por uma função. Sabe-se ainda que não existe matrícula repetida na empresa.*/
+float maior(float salario[5]){
+    float maior = 0.0;
+    
+    for ( int i = 0; i < 5; i++)
+    {
+        if (salario[i] > maior )
+        {
+           maior = (salario[i]);
+        }
+        
+    }
+    
+    return maior;
 
+}
+
+
+int main (){
+    int matricula[5];
+    float salario[5],biger;
+
+    for (int i = 0; i < 5; i++)
+    {
+       printf("Me forneca a matricula do funcionario %d:",i);
+       scanf("%d",&matricula[i]);
+
+       printf("Me forneca o salario do funcionario %d:",i);
+       scanf("%f",&salario[i]);
+    }
+    
+   biger = maior (salario);
+
+    printf("O maior numero e %.2f ",biger);
+
+}
 
 
 //EXERCICIO 7
@@ -136,7 +175,7 @@ int main(){
         }
     }
     
-}/*
+}*/
 
 
 //EXERCICO 9 
@@ -199,7 +238,7 @@ int main(){
 /*10. Elabore um algoritmo que leia um conjunto de valores inteiros correspondentes a até 80
 notas, variando de 0 a 10, dos alunos de uma turma (vários alunos). Calcule a frequência de
 cada nota e apresente uma tabela contendo os valores das notas e suas respectivas frequências.*/
-
+/*
 int main (){
     int notas[10],i,j,repeticao[10];
 
@@ -228,4 +267,4 @@ int main (){
 
 
 
-}
+}*/
