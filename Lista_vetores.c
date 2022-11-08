@@ -48,6 +48,28 @@ int i ;
     }
 }
 */
+/*Faça um algoritmo que leia até 30 letras e as escreva na ordem inversa (ou contrária) da que
+foram lidas*/
+
+//EXERCICIO 4 
+
+int main (){
+    char letras[5];
+    printf("Me forneça as letras ");
+    fflush(stdin);
+    fgets(letras,5,stdin);
+
+
+    for ( int i = 4; i >=0; i--)
+    {
+       printf("%c\n",letras[i]);       
+    }
+    
+
+}
+
+
+
 /*//EXERCICIO 5
 int main(){
     int numero[80];
@@ -78,6 +100,7 @@ int main(){
 (máximo de 100 funcionários). Após a leitura de todos os dados, informe em uma tela limpa os
 dados lidos e o maior e menor salário dos funcionários. O maior e menor salário deverão ser
 obtidos, cada um, por uma função. Sabe-se ainda que não existe matrícula repetida na empresa.*/
+/*
 float maior(float salario[5]){
     float maior = 0.0;
     
@@ -113,6 +136,8 @@ int main (){
     printf("O maior numero e %.2f ",biger);
 
 }
+
+
 
 
 //EXERCICIO 7
