@@ -1,3 +1,8 @@
+/*Exercicio 5
+  Exercicio 2
+  Exercicio 4
+*/
+
 #include <stdio.h>
 //Exercicio 1
 

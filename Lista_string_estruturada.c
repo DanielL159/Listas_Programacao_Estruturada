@@ -80,13 +80,13 @@ int main (){
 
 
 
-// Exercicio 4
+// Exercicio 4(melhorar)
 /*Elabore um programa que faça o armazenamento de um texto. Em uma janela limpa o texto deverá ser
 apresentada com todas as palavras tendo a sua primeira letra em maiúscula e o restante das letras em
 minúsculo. Após a apresentação de todo o texto centralize a linha na horizontal e escreva que este texto
 possui tantas palavras*/
 
-
+/*
 int main (){
    char texto [150];
    int contado,a;
@@ -97,7 +97,7 @@ int main (){
 
    contado= strlen(texto);
    a=isspace(texto);
-   contado=contado a;
+   contado=contado ;
 
    texto[0] =toupper(texto[0]);
    for ( int i = 1; texto[i] != '\0'; i++)
@@ -112,3 +112,5 @@ int main (){
    printf("O texto possui %i de letras",contado);
 
 }
+*/
+

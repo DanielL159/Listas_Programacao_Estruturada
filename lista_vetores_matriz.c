@@ -1,3 +1,6 @@
+/*Exercicio 5
+//exercicio 6
+*/
 #include <stdio.h>
 #include <math.h>
 
@@ -156,7 +159,7 @@ int main(){
     }
 }*/
 
-//Exercicio5 5
+//Exercicio 5
 /* Desenvolva um programa em C que leia duas matrizes 4 x 4 e escreva uma
 terceira com os maiores valores de cada posição das matrizes lidas*/
 
