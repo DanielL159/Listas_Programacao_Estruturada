@@ -1,8 +1,4 @@
-/*
-Exercicio 5
-  Exercicio 2
-  Exercicio 4
-*/
+
 
 #include <stdio.h>
 //Exercicio 1
@@ -43,11 +39,8 @@ int main (){
 
 }*/
 
-//Exercicio 2(Terminar nao entendi o enunciado)
-/*Criar um registro chamado DadosAluno, que armazene o nome e idade de um aluno.
-Na função main: criar uma variável que é uma estrutura DadosAluno; ler o nome e a idade
-de um aluno e armazenar na variável criada; exibir na tela o nome do aluno e a idade do
-aluno.*/
+//Exercicio 2
+
 /*
 struct DadosAluno
 {
@@ -85,11 +78,7 @@ int main(){
 
 }*/
 
-//execicio 4 (Terminar nao consegui fazer)
-/*Defina uma estrutura em C para armazenar dados de um veículo (Marca, modelo, cor,
-quantidade de portas, motorização), crie uma função para armazenar os dados de 10
-veículos, outra para mostrar os dados armazenados, a função main() deve conter um
-pequeno menu para chamar as funções criadas.*/ 
+//execicio 4 
 /*
 struct dados
 {
@@ -136,19 +125,16 @@ int mostraDados(){
   }
   
 
-
 }
 int main(){
   armazemDeDados();
   mostraDados();
   
 
-
-
 }*/
 
 
-//exercicio 5 (NAo ententdi o enunciado)
+//exercicio 5 
 
 struct dados
 {

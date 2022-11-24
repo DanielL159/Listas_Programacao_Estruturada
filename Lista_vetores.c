@@ -24,37 +24,36 @@ scanf( "%d",&x);
 }
 */
 
-/* nao entedi EXERCICIO 3
-int main (){
-    int i = 100;
-    int dados[i] , calculo ;
-
-while (i <=99)
-{
-  dados[i] = 1;
-  calculo = dados [i] + dados[i+1];
-}
-
-}*/
+//nao entedi EXERCICIO 3
 /*
 int main (){
-char letras [30];
-int i ;
+    int i ;
+    int dados[100] , calculo=0 ;
 
-   
-
-    for (i=30 ; i>=30 ;i--){
-    printf("Por favor me forneca as 30 letras: ");
-    scanf("%c",&letras[30]);
-    printf("%c",letras[i]);
+    dados[0]=1;
+    for ( i = 0; i < 100; i++)
+    {
+        dados[i]=i;
     }
-}
-*/
+    
+    for ( i = 0; i < 100; i++)
+    {
+        calculo +=dados[i];
+    }
+    
+    
+    printf("%d",calculo);
+
+}*/
+
+
+/*
+
 /*Faça um algoritmo que leia até 30 letras e as escreva na ordem inversa (ou contrária) da que
 foram lidas*/
 
 //EXERCICIO 4 
-
+/*
 int main (){
     char letras[30];
     printf("Me forneça as letras ");
@@ -68,7 +67,7 @@ int main (){
     }
     
 
-}
+}*/
 
 
 
@@ -137,7 +136,7 @@ int main (){
 
     printf("O maior numero e %.2f ",biger);
 
-}
+}*/
 
 
 
